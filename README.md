@@ -31,6 +31,7 @@
 
 2- Create a controller named SearchController
 
+```
   public function search(Request $request)
     {
         $search = $request->input('search');
@@ -41,7 +42,7 @@
         return view('page_name', compact('results'));
     }
 
-
+```
 3- Create a search form in your view file
 
 4- In your view file, you can display the search results
