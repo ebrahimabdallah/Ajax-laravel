@@ -46,4 +46,5 @@
 3- Create a search form in your view file
 
 4- In your view file, you can display the search results
+
 5- By following these steps, you can create a traditional search
