@@ -18,4 +18,31 @@
 - The server processes the search query and retrieves the search results.
 - The server sends back a response (usually in JSON or XML format) containing the search results.
 - JavaScript code on the client-side receives the response and updates the search results on the page dynamically, without reloading the entire page.
-- AJAX search offers several advantages, such as faster response times, a smoother user experience, 
+- AJAX search offers several advantages, such as faster response times, a smoother user experience,
+--------------------------------------------------------------
+
+- **Create Ajax Search**
+-->go to code in this repo
+
+--------------------------------------------------------------
+- **Create traditional Search**
+
+1- Define a route that handles the search request
+
+2- Create a controller named SearchController
+
+  public function search(Request $request)
+    {
+        $search = $request->input('search');
+
+        // Perform the search query using your model
+        $results = ModelName::where('Search_name', 'like', '%' . $search . '%')->get();
+
+        return view('page_name', compact('results'));
+    }
+
+
+3- Create a search form in your view file
+
+4- In your view file, you can display the search results
+5- By following these steps, you can create a traditional search
